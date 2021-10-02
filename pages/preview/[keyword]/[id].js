@@ -2,6 +2,9 @@ import React from "react";
 import axios from "axios";
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Link from 'next/link'
+
+//components importing
 import InstituteNav from "../../../components/instituecards/institutenav";
 
 const dataurl = `https://pretty-parlour.herokuapp.com/beautiful/service-request/`;
@@ -180,7 +183,7 @@ export default function SeviceItem({ posts,servicedata}) {
     <div class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl">
       <h1 class="text-2xl text-blue-600 font-medium mb-8">Service Request for {`" ${points[0].title} "`}</h1>
       <div id="form" noValidate>
-        <div class="relative z-0 w-full mb-5">
+        {/* <div class="relative z-0 w-full mb-5">
           <input
             type="text"
             name="name"
@@ -226,43 +229,48 @@ export default function SeviceItem({ posts,servicedata}) {
           <label for="password" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter phone</label>
           <span class="text-sm text-red-600 hidden" id="error">Phone is required</span>
         </div>
-  
-      
+   */}
+   
+      <Link
+       href={`https://wa.me/917301258855?text=${points[0].title}`}
+      >
+
         <button
           id="button"
           type="button"
           class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-pink-500 hover:bg-pink-600 hover:shadow-lg focus:outline-none"
-          onClick={() => {
-            setSubmitrequest(true);
-            let date = new Date();
-            let post_data = {
-              name: name,
-              phone: phone,
-              message: message,
-              email:email,
-              date: date.getDate(),
-              month: date.getMonth(),
-              year: date.getFullYear(),
-            };
-            axios
-              .post(dataurl, post_data)
-              .then((response) => {
-                if (response.status == 201) {
-                  setVisibility(true);
-                  setSubmitrequest(false);
-                }else if(response.status == 400){
-                  setVisibility(false);
-                  setSubmitrequest(false);
+          // onClick={() => {
+          //   setSubmitrequest(true);
+          //   let date = new Date();
+          //   let post_data = {
+          //     name: name,
+          //     phone: phone,
+          //     message: message,
+          //     email:email,
+          //     date: date.getDate(),
+          //     month: date.getMonth(),
+          //     year: date.getFullYear(),
+          //   };
+          //   axios
+          //     .post(dataurl, post_data)
+          //     .then((response) => {
+          //       if (response.status == 201) {
+          //         setVisibility(true);
+          //         setSubmitrequest(false);
+          //       }else if(response.status == 400){
+          //         setVisibility(false);
+          //         setSubmitrequest(false);
 
-                }
-              })
-              .catch((error) => {
-                console.log(error);
-              });
-          }}
+          //       }
+          //     })
+          //     .catch((error) => {
+          //       console.log(error);
+          //     });
+          // }}
       >
-          Submit Request 
+         <i className="bi bi-whatsapp 4x"> Whats'App us</i>
         </button>
+        </Link>
       </div>
     </div>
   </div>

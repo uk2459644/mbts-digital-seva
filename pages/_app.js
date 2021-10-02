@@ -1,6 +1,7 @@
 import React from 'react'
 import 'tailwindcss/tailwind.css'
 import Router from "next/router";
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import Waiting from "./waiting/waiting-index";
 

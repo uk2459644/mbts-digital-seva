@@ -93,7 +93,7 @@ export default function ServiceCarousel ({items}){
                 {item.description}
               </p> */}
               <div class="pt-6 p-4 m-4 md:pt-0">
-                    <a href={`/preview/${item.keyword}/${item.id}/`} class="bg-blue-500 text-white justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Book Services</a>
+                    <a href={`/preview/${item.keyword}/${item.id}/`} class="bg-blue-500 text-white justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">View Detail</a>
                 </div>
                 </div>
             </div>

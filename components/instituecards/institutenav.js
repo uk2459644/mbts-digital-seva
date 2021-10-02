@@ -53,7 +53,7 @@ export default function InstituteNav () {
                  Home
                 </a>
               </li>
-               <li>
+               {/* <li>
                 <a
                   href="/book-services"
                   aria-label="Book services"
@@ -62,7 +62,7 @@ export default function InstituteNav () {
                 >
                  Book Test Series
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="/services"
@@ -266,7 +266,7 @@ export default function InstituteNav () {
                           Home
                           </a>
                           </li>
-                        <li>
+                        {/* <li>
                           <a
                             href="/book-services"
                             aria-label="Book services"
@@ -275,7 +275,7 @@ export default function InstituteNav () {
                           >
                            Book Test Series
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a
                             href="/services"

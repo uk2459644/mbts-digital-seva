@@ -209,7 +209,7 @@ export default function Home({whyusdata,reviewdata, whychoosedata, sitedata, fea
           <h2>Why us data is not loaded.</h2>
         </div>
       )}
-        {reviewdata.reviewdata != null ? (
+        {/* {reviewdata.reviewdata != null ? (
         <div>
           <InstituteReview items={reviewdata.reviewdata} />
         </div>
@@ -217,7 +217,7 @@ export default function Home({whyusdata,reviewdata, whychoosedata, sitedata, fea
         <div>
           <h2>Review data is not loaded.</h2>
         </div>
-      )}
+      )} */}
 
       {/* <InstituteResult items={featuredata.featuredata.slice(0,8)} /> */}
       {
