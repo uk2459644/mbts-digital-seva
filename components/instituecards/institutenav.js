@@ -53,16 +53,16 @@ export default function InstituteNav () {
                  Home
                 </a>
               </li>
-               {/* <li>
+               <li>
                 <a
-                  href="/book-services"
-                  aria-label="Book services"
-                  title="Book services"
+                  href="/payment"
+                  aria-label="Payment page"
+                  title="Payment page"
                   class="font-medium tracking-wide text-red-400 transition-colors duration-200 hover:text-yellow-400"
                 >
-                 Book Test Series
+                Payment
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   href="/services"
@@ -266,16 +266,16 @@ export default function InstituteNav () {
                           Home
                           </a>
                           </li>
-                        {/* <li>
+                        <li>
                           <a
-                            href="/book-services"
-                            aria-label="Book services"
-                            title="Book services"
+                            href="/payment"
+                            aria-label="Payment page"
+                            title="Payment page"
                             class="font-medium tracking-wide text-red-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                           Book Test Series
+                          Payment
                           </a>
-                        </li> */}
+                        </li>
                         <li>
                           <a
                             href="/services"
