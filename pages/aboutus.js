@@ -5,7 +5,7 @@ const dataurl = `https://pretty-parlour.herokuapp.com/beautiful/`;
 
 const fetchAboutdata = async () =>
   await axios
-    .get(`${dataurl}aboutus/3/`)
+    .get(`${dataurl}aboutus/4/`)
     .then((res) => ({
       error: null,
       aboutdata: res.data,

@@ -8,7 +8,7 @@ const dataurl = `https://pretty-parlour.herokuapp.com/beautiful/`;
 
 const fetchSiteContacts = async () =>
   await axios
-    .get(`${dataurl}contact/3/`)
+    .get(`${dataurl}contact/4/`)
     .then((res) => ({
       error: null,
       contactsdata: res.data,

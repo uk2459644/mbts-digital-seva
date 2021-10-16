@@ -6,7 +6,7 @@ const dataurl = `https://pretty-parlour.herokuapp.com/beautiful/`;
 
 const fetchQrcode = async () =>
   await axios
-    .get(`${dataurl}qrcode/3/`)
+    .get(`${dataurl}qrcode/4/`)
     .then((res) => ({
       error: null,
       qrcode: res.data,

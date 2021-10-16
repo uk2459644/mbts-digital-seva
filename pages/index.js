@@ -19,7 +19,7 @@ const dataurl = `https://pretty-parlour.herokuapp.com/beautiful/`;
 
 const fetchSitedata = async () =>
   await axios
-    .get(`${dataurl}site-by-owner/3/`)
+    .get(`${dataurl}site-by-owner/4/`)
     .then((res) => ({
       error: null,
       sitedata: res.data,
@@ -31,7 +31,7 @@ const fetchSitedata = async () =>
 
     const fetchReview = async () =>
     await axios
-      .get(`${dataurl}review/3/`)
+      .get(`${dataurl}review/4/`)
       .then((res) => ({
         error: null,
         reviewdata: res.data,
@@ -43,7 +43,7 @@ const fetchSitedata = async () =>
   
 const fetchProfdata = async () =>
 await axios
-  .get(`${dataurl}site-prof/3/`)
+  .get(`${dataurl}site-prof/4/`)
   .then((res) => ({
     error: null,
     profdata: res.data,
@@ -55,7 +55,7 @@ await axios
 
 const fetchSiteFeature = async () =>
   await axios
-    .get(`${dataurl}feature-by/3/`)
+    .get(`${dataurl}feature-by/4/`)
     .then((res) => ({
       error: null,
       featuredata: res.data,
@@ -67,7 +67,7 @@ const fetchSiteFeature = async () =>
 
 const fetchSiteContacts = async () =>
   await axios
-    .get(`${dataurl}contact/3/`)
+    .get(`${dataurl}contact/4/`)
     .then((res) => ({
       error: null,
       contactsdata: res.data,
@@ -79,7 +79,7 @@ const fetchSiteContacts = async () =>
 
 const fetchSiteFaq = async () =>
   await axios
-    .get(`${dataurl}faq/3/`)
+    .get(`${dataurl}faq/4/`)
     .then((res) => ({
       error: null,
       faqdata: res.data,
@@ -91,7 +91,7 @@ const fetchSiteFaq = async () =>
 
   const fetchTopService = async () =>
   await axios
-    .get(`${dataurl}top-services/3/`)
+    .get(`${dataurl}top-services/4/`)
     .then((res) => ({
       error: null,
       topdata: res.data,
@@ -104,7 +104,7 @@ const fetchSiteFaq = async () =>
     
 const fetchWhyUsdata = async () =>
 await axios
-  .get(`${dataurl}whyus/3/`)
+  .get(`${dataurl}whyus/4/`)
   .then((res) => ({
     error: null,
     whyusdata: res.data,
@@ -116,7 +116,7 @@ await axios
 
 const fetchWhyChoosedata = async () =>
 await axios
-  .get(`${dataurl}why-choose/3/`)
+  .get(`${dataurl}why-choose/4/`)
   .then((res) => ({
     error: null,
     whychoosedata: res.data,
